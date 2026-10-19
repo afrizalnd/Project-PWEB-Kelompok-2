@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Senja | Katalog Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Kopi Senja</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="menu.html" class="aktif">Katalog Menu</a></li>
+        <li><a href="pesan.html">Pesan Cepat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <h2>Katalog Menu</h2>
+      <p>Pilih kategori untuk mempersempit daftar.</p>
+    </div>
+
+    <div class="filter">
+      <button id="filter-semua" type="button">Semua</button>
+      <button id="filter-kopi" type="button">Kopi</button>
+      <button id="filter-nonkopi" type="button">Non-Kopi</button>
+      <button id="filter-camilan" type="button">Camilan</button>
+    </div>
+    <p id="info-filter">Menampilkan: Semua menu</p>
+
+    <!-- Bagian Kopi -->
+    <section id="kopi" class="kategori">
+      <h2>Kopi</h2>
+      <div class="grid-3">
+        <article class="kartu produk">
+          <img class="ikon" src="Foto Foto Project/Espresso - Coffee Class.jpg" alt="Espresso">
+          <h3>Espresso</h3>
+          <p>Shot ganda, pekat dengan rasa cokelat.</p>
+          <div class="produk-bawah"><span class="harga">Rp18.000</span><a class="btn emas" href="pesan.html">Pesan</a></div>
+        </article>
+        <article class="kartu produk">
+          <img class="ikon" src="Foto Foto Project/ES KOPI SUSU GULA AREN ALA.jpg" alt="Kopi Susu Gula Aren">
+          <h3>Kopi Susu Gula Aren</h3>
+          <p>Espresso, susu segar, gula aren.</p>
+          <div class="produk-bawah"><span class="harga">Rp25.000</span><a class="btn emas" href="pesan.html">Pesan</a></div>
+        </article>
+        <article class="kartu produk">
+          <img class="ikon" src="Foto Foto Project/☕ Homemade Cappuccino 🥄.jpg" alt="Cappuccino">
+          <h3>Cappuccino</h3>
+          <p>Susu berbusa tebal di atas espresso.</p>
+          <div class="produk-bawah"><span class="harga">Rp27.000</span><a class="btn emas" href="pesan.html">Pesan</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Bagian Non-Kopi -->
+    <section id="nonkopi" class="kategori">
+      <h2>Non-Kopi</h2>
+      <div class="grid-3">
+        <article class="kartu produk">
+          <img class="ikon" src="Foto Foto Project/Matcha Green Tea Latte (Hot or Iced).jpg" alt="Matcha Latte">
+          <h3>Matcha Latte</h3>
+          <p>Matcha Uji dengan susu oat.</p>
+          <div class="produk-bawah"><span class="harga">Rp28.000</span><a class="btn emas" href="pesan.html">Pesan</a></div>
+        </article>
+        <article class="kartu produk">
+          <img class="ikon" src="Foto Foto Project/hotchocolatte.jpg" alt="Cokelat Panas">
+          <h3>Cokelat Panas</h3>
+          <p>Cokelat pekat, tidak terlalu manis.</p>
+          <div class="produk-bawah"><span class="harga">Rp26.000</span><a class="btn emas" href="pesan.html">Pesan</a></div>
+        </article>
+        <article class="kartu produk">
+          <img class="ikon" src="Foto Foto Project/Glass of ice lemon tea _ Premium Photo.jpg" alt="Lemon Tea">
+          <h3>Lemon Tea</h3>
+          <p>Teh melati dingin dengan lemon segar.</p>
+          <div class="produk-bawah"><span class="harga">Rp18.000</span><a class="btn emas" href="pesan.html">Pesan</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Bagian Camilan -->
+    <section id="camilan" class="kategori">
+      <h2>Camilan</h2>
+      <div class="grid-3">
+        <article class="kartu produk">
+          <img class="ikon" src="Foto Foto Project/Close-up of a croissant with a pat of butter on a plate_ royalty free stock image.jpg" alt="Croissant Mentega">
+          <h3>Croissant Mentega</h3>
+          <p>Renyah, dipanggang tiap pagi.</p>
+          <div class="produk-bawah"><span class="harga">Rp22.000</span><a class="btn emas" href="pesan.html">Pesan</a></div>
+        </article>
+        <article class="kartu produk">
+          <img class="ikon" src="Foto Foto Project/EASY RECIPE For Moist Banana Bread Recipe_ Homemade Baking Guide (Digital Download).jpg" alt="Banana Bread">
+          <h3>Banana Bread</h3>
+          <p>Pisang matang, taburan kenari.</p>
+          <div class="produk-bawah"><span class="harga">Rp20.000</span><a class="btn emas" href="pesan.html">Pesan</a></div>
+        </article>
+        <article class="kartu produk">
+          <img class="ikon" src="Foto Foto Project/kentanggoreng.jpg" alt="Kentang Goreng">
+          <h3>Kentang Goreng</h3>
+          <p>Garing, dengan saus sambal rumahan.</p>
+          <div class="produk-bawah"><span class="harga">Rp18.000</span><a class="btn emas" href="pesan.html">Pesan</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="info-pembuat">&copy; 2026 Kopi Senja, Cilacap</p>
+  </footer>
+  <script src="menu.js"></script>
+</body>
+</html>
