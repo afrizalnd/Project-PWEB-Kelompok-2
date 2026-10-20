@@ -4,7 +4,7 @@ if (infoPembuat !== null) {
   infoPembuat.textContent = "© 2026 Kopi Senja, Cilacap | Dibuat oleh Mahasiswa D3 Teknik Informatika";
 }
 
-// ---------- Beranda: sapaan dan promo ----------
+// ---------- Beranda ----------
 const sapaan = document.getElementById("sapaan");
 const tombolPromo = document.getElementById("tombol-promo");
 const promoIsi = document.getElementById("promo-isi");
