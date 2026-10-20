@@ -50,16 +50,26 @@ button.hapus { background-color: #444444; }
 #promo-isi { margin-top: 20px; padding: 18px; background-color: #f4c542; color: #8f1d22; border-radius: 8px; max-width: 520px; margin-left: auto; margin-right: auto; font-weight: bold; }
 
 /*  TENTANG (Flexbox dua kolom)  */
-.dua-kolom { display: flex; gap: 32px; }
-.kolom-utama { flex: 2; }
-.kolom-samping { flex: 1; padding: 22px; background-color: white; border: 1px solid #e6dcdc; border-radius: 10px; }
+.dua-kolom { display: flex; gap: 32px; align-items: flex-start; }
+.kolom-utama { flex: 2; background-color: white; padding: 24px; border: 1px solid #e6dcdc; border-radius: 10px; }
+.kolom-utama h2, .kolom-utama h3 { color: #8f1d22; margin-bottom: 10px; }
+.kolom-utama h3 { margin-top: 18px; }
 .kolom-utama p { margin-bottom: 14px; }
+.info-visi { background-color: #f6eded; border-left: 4px solid #a5441a; padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0; color: #8f1d22; font-style: italic; }
+.perjalanan-list { margin-left: 20px; }
+.perjalanan-list li { margin-bottom: 8px; }
+.kolom-samping { flex: 1; padding: 22px; background-color: white; border: 1px solid #e6dcdc; border-top: 4px solid #8f1d22; border-radius: 10px; }
+.kolom-samping h3 { color: #8f1d22; margin-bottom: 10px; }
 .kolom-samping li { margin-left: 18px; margin-bottom: 8px; }
-table { width: 100%; border-collapse: collapse; background-color: white; }
-th, td { padding: 10px 14px; text-align: left; border: 1px solid #e6dcdc; }
+table { width: 100%; border-collapse: collapse; background-color: white; border-radius: 8px; overflow: hidden; }
+th, td { padding: 12px 14px; text-align: left; border: 1px solid #e6dcdc; }
 th { background-color: #8f1d22; color: white; }
+tbody tr:nth-child(even) { background-color: #fcf8f8; }
+tbody tr:hover { background-color: #f6eded; }
 .kontak { display: flex; flex-wrap: wrap; gap: 16px; }
-.kontak div { flex: 1; min-width: 200px; padding: 18px; background-color: white; border: 1px solid #e6dcdc; border-radius: 10px; }
+.kontak div { flex: 1; min-width: 200px; padding: 18px; background-color: white; border: 1px solid #e6dcdc; border-left: 4px solid #8f1d22; border-radius: 10px; transition: transform 0.2s ease; }
+.kontak div:hover { transform: translateY(-3px); }
+.kontak h3 { color: #8f1d22; margin-bottom: 6px; }
 
 /*  KATALOG MENU  */
 .filter { display: flex; flex-wrap: wrap; gap: 10px; padding: 24px 32px 0; max-width: 1080px; margin: 0 auto; }
