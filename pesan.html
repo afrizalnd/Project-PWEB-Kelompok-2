@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Senja | Pesan Cepat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Kopi Senja</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="menu.html">Katalog Menu</a></li>
+        <li><a href="pesan.html" class="aktif">Pesan Cepat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <h2>Pesan Cepat</h2>
+      <p>Isi formulir, lihat total harga, lalu ambil pesananmu di kasir.</p>
+    </div>
+
+    <section>
+      <div class="form-wrap">
+        <article class="kartu form-kartu">
+          <label for="nama">Nama pemesan</label>
+          <input type="text" id="nama" placeholder="Contoh: Andi" />
+
+          <label for="pilihan">Menu</label>
+          <select id="pilihan">
+            <option value="espresso">Espresso - Rp18.000</option>
+            <option value="kopisusu">Kopi Susu Gula Aren - Rp25.000</option>
+            <option value="cappuccino">Cappuccino - Rp27.000</option>
+            <option value="matcha">Matcha Latte - Rp28.000</option>
+            <option value="cokelat">Cokelat Panas - Rp26.000</option>
+            <option value="lemontea">Lemon Tea - Rp18.000</option>
+            <option value="croissant">Croissant Mentega - Rp22.000</option>
+            <option value="bananabread">Banana Bread - Rp20.000</option>
+          </select>
+
+          <label for="jumlah">Jumlah</label>
+          <input type="number" id="jumlah" placeholder="Contoh: 2" />
+
+          <div class="baris-tombol">
+            <button id="tombol-hitung" class="emas" type="button">Hitung pesanan</button>
+            <button id="tombol-hapus" class="hapus" type="button">Hapus</button>
+          </div>
+        </article>
+
+        <aside class="ringkasan">
+          <h3>Ringkasan pesanan</h3>
+          <p id="pesan">Isi formulir lalu tekan Hitung pesanan.</p>
+          <p id="diskon">Diskon: -</p>
+          <p id="total">Rp0</p>
+          <p id="statistik">Pesanan dihitung: 0</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="info-pembuat">&copy; 2026 Kopi Senja, Cilacap</p>
+  </footer>
+  <script src="pesan.js"></script>
+</body>
+</html>
